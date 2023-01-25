@@ -4,25 +4,33 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
+  <link rel="stylesheet" href="./css/style.css">
+
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   
   <title>Frontend Mentor | Order summary card</title>
+  
+  <style>
+  @import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@700&display=swap');
+</style>
+
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
-    .attribution { font-size: 11px; text-align: center; }
+    .attribution { font-size: 16px; text-align: center; margin-top: 40px; }
     .attribution a { color: hsl(228, 45%, 44%); }
   </style>
 </head>
-<body>
-
+<body class="bg-swirl">
 
   <section class="card">
 
 
 
 
-    <div class="hero"> <object data="./images/illustration-hero.svg" width="450" height="220"> </object>
+    <div class="hero"> 
+      <img src="./images/illustration-hero.svg"> 
+      </img>
     </div>
 
 
@@ -39,43 +47,45 @@
           device anywhere you like!
         </p>
       </div>
+    </section>
 
 
+    <div class="plan">
 
-      <div>
-        <object data="/order-summary-component-main/images/icon-music.svg" width="48" height="48"></object>
+
+      <div class="music-icon">
+        <img src="/order-summary-component-main/images/icon-music.svg" alt="music icon">
+        </img>
       </div>
 
-
-
-
-      <div class="plan">
-        <div>
+      <div class="price">
           <h2>Annual Plan</h2>
-        </div>
-        <div>
-          $59.99/year
-        </div>
-        <div>
-          Change
-        </div>
+          <p>$59.99/year</p>
       </div>
 
-
-
-      <div class="button-1">
-        <button>
-          <h3>Proceed to Payment</h3>
-        </button>
+      <div class="change">
+          <p>
+            <a href="">Change
+            </p>
       </div>
 
+      
+    </div>
 
 
-      <div class="button-2">
-        <button>
-          <h3>Cancel Order</h3>
-        </button>
-      </div>
+
+      <section class="card-main">
+        <div >
+          <button class="button-1">
+            <h3>Proceed to Payment</h3>
+          </button>
+        </div>
+        <div >
+          <button class="button-2">
+            <h3>Cancel Order</h3>
+          </button>
+        </div>
+      </section>
 
 
     </section>
@@ -84,19 +94,28 @@
   
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Co-Coded by <a href="#">Nathan and Caitlyn</a>.
   </div>
+
+
 </body>
 </html>
 
 <!--
-set bg
-  off light blue
-  svg wave whale
-    (mobile bg - @media query)
-set card
-  radius
-  drop shadow btm
-  hero image (width fill card)
+x set bg
+  x off light blue
+  x svg wave whale
+    ++(mobile bg - @media query)
 
+x set card
+  x radius
+  x drop shadow btm
+  x hero image (width
+  x fill card)
+
+- remove html hero
+
+  ++ plan elements positioning
+
+  +++ resize / recolour everything!
 -->
