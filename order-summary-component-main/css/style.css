@@ -10,7 +10,7 @@ body{
 
 body.bg-swirl {
     background-image: url("../images/pattern-background-desktop.svg") ;
-    background-color: #c4d0f5;
+    background-color: #a6b8ec;
     background-repeat: no-repeat;
     background-size: contain;
 }
@@ -28,7 +28,7 @@ section.card {
     width: 450px;
     margin-right: auto;
     margin-left: auto;
-    border-radius: 20px 20px 20px 20px;
+    border-radius: 30px 30px 30px 30px;
     justify-content: center;
     align-items: center;
 }
@@ -42,10 +42,9 @@ If the element has an image background, it will be clipped at the rounded corner
 */
 
 div.hero{
-   background-image: url(../images/illustration-hero.svg);
-    border-radius: 4%;
-    padding-top: 10px;
-    
+   background-color: #3426f0;
+    border-radius: 30px;
+    padding-top: 30px;
 }
 
 .hero img{
@@ -73,21 +72,21 @@ button {
 }
 
 .button-1 {
-    background-color:blueviolet;
+    background-color:rgb(101, 16, 180);
     color:aliceblue;
     margin-bottom: 10px;
     margin-top: 10px;
     border: none;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 60px;
+    padding-right: 60px;
 }
 
-.button-2 {
+a {
     background-color:rgba(137, 43, 226, 0);
-    color:rgb(0, 0, 0);
+    color:rgb(119, 119, 119);
     margin-bottom: 10px;
     border: none;
-    text-decoration: underline;
+    text-decoration: none;
 }
 
 
@@ -98,32 +97,46 @@ button {
 .plan {
     display: flex;
     flex-direction: row;
-    background-color: rgb(206, 248, 242);
+    background-color: #cef8f2;
     width: 400px;
-    justify-content: space-around;
+    /* justify-content: space-around; */
     border-style: dotted;
     border-width: 5px;
     border-color: red;
     border-radius: 30px;
-    
 }
 
 .music-icon{
     border-style: dotted;
     border-width: 5px;
     border-color:yellow;
+    position: relative;
+    left: 30px;
+    top: 25px;
+    height: 50%;
 }
 
 .price{
     border-style: dotted;
     border-width: 5px;
     border-color: lime;
+    position: relative;
+    left: 50px;
 }
 
 .change {
     border-style: dotted;
     border-width: 5px;
     border-color: blue;
+    position: relative;
+    left: 100px;
+    height: 20%;
+    top: 30px;
+    text-decoration: underline;
+}
+
+.change > p {
+    color: blue;
 }
 
 /*https://developer.mozilla.org/en-US/docs/Web/CSS/box-shadow*/
@@ -133,8 +146,37 @@ button {
 }
 
 .button-1 {
-    box-shadow: 0 5px 20px rgba(153, 0, 255, 0.432);
+    box-shadow: 0 5px 20px rgba(49, 3, 80, 0.432);
 }
 
+/* hover transformations */
 
-/* +++ mobile responisve */
+a:hover {
+    background-color:rgba(137, 43, 226, 0);
+    color:rgb(0, 0, 0);
+    margin-bottom: 10px;
+    border: none;
+}
+
+.button-1:hover {
+    box-shadow: 0 5px 20px rgba(147, 50, 212, 0.6);
+    background-color:rgb(123, 59, 182);
+}
+
+/* resize h1 */
+
+.title {
+    font-size: 2rem;
+    font-weight: 900;
+    margin-bottom: -30px;
+}
+
+.pitch {
+    font-weight: 400;
+}
+
+.subscribe {
+    margin-top: -20px;
+}
+
+/* +++ mobile responsive */
